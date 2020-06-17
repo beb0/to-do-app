@@ -1,3 +1,6 @@
+var http = require('http')
+var fs = require('fs')
+
 http.createServer(function (req, res) {
     console.log("Request was made at: " + req.url)
     if  (req.url === "/home" || req.url === "/"){
