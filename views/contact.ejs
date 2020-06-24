@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">    
     <title>Contact</title>
-    <style>
-        h1 {color: aquamarine; text-align: center; font-size: 180px;}
-        p {color: blanchedalmond; text-align: center; font-size: 70px;}
-        body{background-color: darkslategray; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-    </style>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <%- include('partials/nav.ejs') %> 
     <h1>
-        hey! <%= name %>       
+        hey!
     </h1>
     <p>
-        your job is <%= data.job %> 
-        contact us at : <%= num %>
+        contact us at : 185855
     </p>
+
+    <form id="contact-form" method="POST" action="/contact">
+
+        <label for="name">Please Enter a name </label>
+        <input type="text"  name="who">
+        <label for="email">Please Enter your email </label>
+        <input type="text"  name="email">
+        <label for="note">Whats up </label>
+        <input type="text"  name="note">
+        <input type="submit" value="submit">
+        
+    </form>
+
 </body>
 </html>

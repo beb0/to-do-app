@@ -1,0 +1,8 @@
+h1 {color: aquamarine; text-align: center; font-size: 180px;}
+p {color: blanchedalmond; text-align: center; font-size: 70px;}
+body{background-color: darkslategray; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+#contact-form {
+    box-sizing: border-box;
+    font-size: medium;
+}
